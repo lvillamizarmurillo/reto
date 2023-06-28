@@ -3,7 +3,10 @@
     "license": "LST",
     "autoload": {
         "psr-4": {
-            "App\\": "src/"
+            "App\\": [
+                "./scripts/db",
+                "./scripts/campers"
+        ]
         }
     },
     "authors": [

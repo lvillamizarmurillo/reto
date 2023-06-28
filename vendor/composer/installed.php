@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'apolt01-043/reto',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'reference' => '36af8c3568a7a86d7cefa8b9578ce8d745b42f46',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'apolt01-043/reto' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '36af8c3568a7a86d7cefa8b9578ce8d745b42f46',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
