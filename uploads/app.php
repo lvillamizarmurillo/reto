@@ -10,22 +10,22 @@ $dotenv->load();
 $credenciales = new App\connect();
 
 
-$router->post('/camper', function() {
+$router->post('/campers', function() {
     $_DATA = json_decode(file_get_contents("php://input"), true);
     global $credenciales;
     $conn = $credenciales->getConnection();
     $res = $conn->prepare("INSERT INTO campers (idCamper, nombreCamper, apellidoCamper, fechaNac, idReg) VALUES (:id, :nombre, :apellido, :nacimiento, :idRegion)");
-    $res->bindParam("idCamper", $_DATA['id']);
-    $res->bindParam("nombreCamper", $_DATA['nombre']);
-    $res->bindParam("apellidoCamper", $_DATA['apellido']);
-    $res->bindParam("fechaNac", $_DATA['naciomiento']);
-    $res->bindParam("idReg", $_DATA['idRegion']);
+    $res->bindParam("id", $_DATA['id']);
+    $res->bindParam("nombre", $_DATA['nombre']);
+    $res->bindParam("apellido", $_DATA['apellido']);
+    $res->bindParam("nacimiento", $_DATA['naciomiento']);
+    $res->bindParam("idRegion", $_DATA['idRegion']);
     $res->execute();
     $res = $res->rowCount();
     echo json_encode($res);
 });
 
-$router->get('/camper', function() {
+$router->get('/campers', function() {
     global $credenciales;
     $conn = $credenciales->getConnection();
     $res = $conn->prepare('SELECT nombreCamper * FROM campers');
