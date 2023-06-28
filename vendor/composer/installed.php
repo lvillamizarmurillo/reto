@@ -3,7 +3,7 @@
         'name' => 'apolt01-043/reto',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '36af8c3568a7a86d7cefa8b9578ce8d745b42f46',
+        'reference' => 'ee23d3a66d68fd0c7ca5215937ede0730fdc4db5',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'apolt01-043/reto' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '36af8c3568a7a86d7cefa8b9578ce8d745b42f46',
+            'reference' => 'ee23d3a66d68fd0c7ca5215937ede0730fdc4db5',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

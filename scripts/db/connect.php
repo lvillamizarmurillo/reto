@@ -1,6 +1,7 @@
 <?php
     namespace App;
     class connect{
+        
         public $con;
         function __construct(){
             try {
@@ -11,6 +12,9 @@
             } catch (\PDOException $e) {
                 echo  $e->getMessage();
             }
+        }
+        public function getConnection() {
+            return $this->conn;
         }
     }
 ?>
