@@ -1,0 +1,19 @@
+{
+    "name": "apolt01-043/reto",
+    "license": "LST",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "lvillamizarmurillo",
+            "email": "lvillamizarmurillo@gmail.com"
+        }
+    ],
+    "require": {
+        "bramus/router": "~1.6",
+        "vlucas/phpdotenv": "^5.5"
+    }
+}
